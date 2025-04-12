@@ -1,0 +1,84 @@
+<section class="order-section">
+    <h2>Place Your Order</h2>
+    <form class="order-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+  
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" />
+  
+      <label for="items">Select Your Meal:</label>
+      <select id="items" name="items" required>
+        <option value="">--Choose an item--</option>
+        <option value="butter chicken">Butter Chicken - ₹250</option>
+        <option value="tandoori platter">Tandoori Platter - ₹400</option>
+        <option value="punjabi thali">Punjabi Thali - ₹300</option>
+        <option value="lassi">Sweet Lassi - ₹70</option>
+      </select>
+  
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+  <style>
+  .order-section {
+    padding: 40px 20px;
+    background-color: #fff3e0;
+    text-align: center;
+  }
+  
+  .order-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #bf360c;
+  }
+  
+  .order-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .order-form label {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .order-form input,
+  .order-form select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .order-form button {
+    background-color: #d84315;
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .order-form button:hover {
+    background-color: #bf360c;
+  }
+  </style>
+  <a href="javascript:history.back()" style="text-decoration: none; padding: 10px 20px; background-color: #ff7043; color: white; border-radius: 5px;">← Back</a>
+
+   <script>
+    document.querySelector('.order-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const item = document.getElementById('items').value;
+      alert(`Thanks ${name}, your order for "${item}" has been placed! 🍽️`);
+      this.reset();
+    });
+    
+
+  </script>
+  

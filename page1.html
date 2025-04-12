@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delish Dine | Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfaf6;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #d84315;
+    }
+
+    .menu-section {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .category {
+      margin-bottom: 40px;
+    }
+
+    .category h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #d84315;
+      display: inline-block;
+      padding-bottom: 5px;
+      color: #d84315;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .item:last-child {
+      border-bottom: none;
+    }
+
+    .item-name {
+      font-weight: 500;
+    }
+
+    .item-price {
+      color: #4caf50;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      .item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .item-price {
+        margin-top: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <a href="javascript:history.back()" style="text-decoration: none; padding: 10px 20px; background-color: #ff7043; color: white; border-radius: 5px;">← Back</a>
+
+  <header>
+    <h1>Delish Dine Menu</h1>
+    <p>Your flavor journey starts here 🍽️</p>
+  </header>
+
+  <div class="menu-section">
+    <div class="category">
+      <h2>Starters</h2>
+      <div class="item">
+        <span class="item-name">Garlic Bread</span>
+        <span class="item-price">₹250</span>
+        </div>
+      <div class="item">
+        <span class="item-name">Crispy Calamari</span>
+        <span class="item-price">₹300</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Bruschetta</span>
+        <span class="item-price">₹280</span>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Main Course</h2>
+      <div class="item">
+        <span class="item-name">Grilled Chicken Alfredo</span>
+        <span class="item-price">₹450</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Margherita Pizza</span>
+        <span class="item-price">₹580</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Spaghetti Bolognese</span>
+        <span class="item-price">₹600</span>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Desserts</h2>
+      <div class="item">
+        <span class="item-name">Chocolate Lava Cake</span>
+        <span class="item-price">₹510</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Vanilla Ice Cream</span>
+        <span class="item-price">₹380</span>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Beverages</h2>
+      <div class="item">
+        <span class="item-name">Fresh Lemonade</span>
+        <span class="item-price">₹450</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Iced Coffee</span>
+        <span class="item-price">₹180</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Delish Dine. All rights reserved.
+  </footer>
+
+</body>
+</html>
